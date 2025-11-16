@@ -1,8 +1,8 @@
  :root {
-    --primary-color: #055a05;
-    /* --secundary-color: #f4a261; */
+    --primary-color: #ffffff;
+   /* --secundary-color: #f4a261; */
     --accent1-color: rgba(38, 70, 83, 0.65);
-    /* --accent2-color: #e9c46a; */
+    --accent2-color: rgba(38, 70, 83);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
  }
@@ -10,6 +10,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ }
+ 
+ header {
+    color: var(--accent2-color);
  }
 
  body {
@@ -22,15 +26,28 @@
     margin: 0 auto;
  }
 
+ h2 {
+    margin-left: -16px;       /* "sacar" el h2 hacia la izquierda */
+    margin-right: -16px;      /* opcional: simétrico a la izquierda */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--accent2-color);
+ }
+
  h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
  }
 
- nav, p, section, article {
+nav, p {
     margin: 16px;
     padding: 8px;
- }
+}
+
+section, article {
+    margin-bottom: 16px; /* solo abajo */
+    padding: 16px;       /* si lo necesitas */
+}
 
  .socialmedia a {
     text-decoration: none;
