@@ -169,7 +169,7 @@ nav a {
 }
 
 .contact-form button {
-    background-color: #4e77c8;
+    background-color: #264653;
     color: white;
     cursor: pointer;
     border: none;
@@ -183,7 +183,7 @@ nav a {
 /* PURPOSE RADIO GROUP */
 .purpose-group {
     border: 1px solid #bbb;
-    padding: .7rem;
+    padding: 1rem;
     border-radius: 5px;
 }
 
@@ -192,9 +192,20 @@ nav a {
 }
 
 .purpose-group label {
-    display: block;
-    margin-bottom: .5rem;
+    display: flex;
+    align-items: center; /* centra verticalmente radio y texto */
+    gap: 0.5rem;        /* espacio entre radio y texto */
+    margin-bottom: 0.5rem;
 }
+
+.purpose-group input[type="radio"] {
+    margin: 0;           /* elimina margen predeterminado */
+    vertical-align: middle; /* fuerza alineación vertical */
+    width: 16px;
+    height: 16px;
+}
+
+
 
 /* NEWSLETTER CHECKBOX */
 .newsletter {
@@ -228,10 +239,22 @@ footer {
     margin-top: 30px;
     padding: 20px;
     background-color: #e3d9ff;
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* separa el texto y los iconos */
+    align-items: center; /* centra verticalmente */
 }
 
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px; /* espacio entre los iconos */
+}
+
+
 .socialmedia img {
-    width: 40px;
+    width: 30px;
     margin: 0 8px;
 }
